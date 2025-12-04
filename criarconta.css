@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffafa;
+}
+
+/* cabeçalho simplificado */
+
+.simple-header {
+    background-color: #ffe0e6;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    width: 100%;
+}
+
+.header-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #555;
+}
+
+.header-nav {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+.customer-support .nav-icon {
+    margin-right: 5px;
+}
+
+    /* criar conta */
+
+/* --- CONFIGURAÇÃO GERAL E FLUXO ESTÁVEL --- */
+.body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; 
+    background-color: #fffafa;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* --- CONTÊINER PRINCIPAL: Centralização e Espaçamento --- */
+.create-account-page-container {
+    padding: 0 20px; 
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 440px; 
+    
+    /* CHAVE: Empurra o formulário para baixo e centraliza horizontalmente */
+    margin: 70px auto 50px auto; /* 100px de margem superior para afastar do cabeçalho */
+}
+
+/* --- ESTILOS DO CARTÃO DE CRIAÇÃO DE CONTA --- */
+.account-box {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    width: 100%; 
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* --- Cabeçalho --- */
+.account-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.account-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.account-header p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+/* --- Formulário e Inputs --- */
+.account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-google-top {
+    background-color: white;
+    color: #333;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço após o botão Google */
+}
+
+.icon-google {
+    font-size: 18px;
+    color: #db4437; 
+}
+
+/* Separador "Or" */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    margin: 10px 0;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 0 10px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.visually-hidden { /* Para rótulos que não aparecem visualmente */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+.input-container .icon {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #777;
+}
+
+.input-container input {
+    border: none;
+    flex-grow: 1;
+    padding: 5px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    /* Estilo básico, pode ser customizado com CSS avançado */
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.btn-create-account {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.terms-policy {
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.terms-link, .policy-link {
+    color: #4a4a4a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* --- Rodapé --- */
+.account-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 30px; /* Espaço maior para o rodapé */
+}
+
+.login-link {
+    color: #4a4a4a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+    /* rodapé */ 
+
+/* --- estilização do rodapé --- */
+
+.footer {
+    background-color: #fffafa; 
+    padding: 30px 20px; 
+    border-top: 1px solid #999; 
+    font-family: Arial, sans-serif;
+}
+
+/* estilização do conteúdo */
+
+.footer .content {
+    max-width: 960px; 
+    margin: 0 auto;
+}
+
+.footer .has-text-centered {
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* estilização dos links */
+
+.footer a {
+    color: #b72730;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #b72730;
+    text-decoration: underline;
+}
+
+/* estilização do destaque */
+
+.footer strong {
+    color: #333333;
+    font-weight: bold;
+}

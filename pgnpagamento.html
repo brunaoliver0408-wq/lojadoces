@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Sweet&Co</title>
+    <link rel="stylesheet" href="pgnpagamento.css">
+</head>
+<body>
+    
+    <!--cabeçalho-->
+
+    <header class="simple-header">
+    <div class="header-content-wrapper">
+        <a href="indexloja.html" class="header-logo">
+            <span class="logo-icon"></span>
+        </a>
+        
+        <nav class="header-nav">
+            <a href="indexloja.html" class="nav-link back-to-shop">Voltar à Loja</a>
+            <a href="#" class="nav-link customer-support">Suporte ao Cliente</a>
+        </nav>
+    </div>
+</header>
+
+    <!--pagina checkout-->
+
+    <main class="checkout-page">
+    
+    <header class="checkout-header">
+        <h1>Finalizar Compra</h1>
+        <p>Taxas de envio e cupons de desconto serão aplicados abaixo.</p>
+    </header>
+
+    <div class="checkout-layout-container">
+        
+        <div class="details-column">
+            
+            <section class="user-info-section">
+                <div class="user-header">
+                    <span class="user-icon">👤</span>
+                    <h2>Maria Silva</h2>
+                    <a href="#" class="change-link">Alterar endereço</a>
+                </div>
+                
+                <div class="user-details-grid">
+                    <div class="detail-group">
+                        <span class="detail-label">E-mail</span>
+                        <p class="detail-value">maria.silva@email.com</p>
+                    </div>
+                    <div class="detail-group">
+                        <span class="detail-label">Endereço</span>
+                        <p class="detail-value">Rua das Flores, 123</p>
+                        <p class="detail-value">São Paulo - SP</p>
+                    </div>
+                    <div class="detail-group">
+                        <span class="detail-label">Telefone</span>
+                        <p class="detail-value">(11) 99999-9999</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shipping-details-section">
+                <h3>Detalhes do Pedido</h3>
+                
+                <div class="checkout-item">
+                    <img src="imgs/bombomdemaracuja.jpg" alt="Bombom de Maracujá" class="item-image">
+                    <div class="item-info">
+                        <h4 class="product-name">Bombom de Maracujá</h4>
+                        <p class="description">Brigadeiro de ninho, maracujá e cobertura de chocolate</p>
+                        
+                        <div class="quantity-control">
+                            <input type="number" value="2" min="1" class="qty-input">
+                        </div>
+                    </div>
+                    
+                    <div class="item-pricing">
+                        <button class="remove-btn">🗑️</button>
+                        <div class="price-section">
+                            <span class="current-price-small">R$30,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-item">
+                    <img src="imgs/brigadeirao.jpg" alt="Brigadeirão Fit" class="item-image">
+                    <div class="item-info">
+                        <h4 class="product-name">Brigadeirão Fit</h4>
+                        <p class="description">Brigadeiro sem glúten e sem lactose</p>
+                        
+                        <div class="quantity-control">
+                            <input type="number" value="1" min="1" class="qty-input">
+                        </div>
+                    </div>
+                    
+                    <div class="item-pricing">
+                        <button class="remove-btn">🗑️</button>
+                        <div class="price-section">
+                            <span class="current-price-small">R$30,00</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+        <div class="summary-column">
+            <h2>Resumo</h2>
+            
+            <div class="summary-details">
+                <div class="summary-line">
+                    <span>Itens no Carrinho</span>
+                    <span>R$60,00</span>
+                </div>
+                <div class="summary-line">
+                    <span>Frete</span>
+                    <span>R$10,00</span>
+                </div>
+                <div class="summary-line savings-line">
+                    <span>Desconto aplicado</span>
+                    <span>-R$6,00</span>
+                </div>
+                <div class="summary-line discount-code-line">
+                    <span>Cupom DOCE10</span>
+                    <span>-R$6,00</span>
+                </div>
+                
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>R$58,00</span>
+                </div>
+            </div>
+            
+            <div class="discount-gift-card">
+                <span>CUPOM DE DESCONTO</span>
+                <span class="arrow-icon">▼</span>
+            </div>
+            
+            <div class="discount-input-area">
+                <input type="text" placeholder="Digite seu cupom" class="discount-input">
+                <button class="apply-btn">Aplicar</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!--frete-->
+
+    <div class="shipping-options-card-group">
+    
+    <div class="shipping-option-item selected">
+        <label for="pickup-point" class="option-label">
+            
+            <input type="radio" id="pickup-point" name="shipping-method" value="pickup" checked>
+            
+            <div class="option-content">
+                <span class="title">Ponto de Retirada</span>
+                <p class="time">Prazo: 2-3 dias úteis</p>
+                
+                <div class="address-details">
+                    <span class="ship-to-label">Retirar em:</span>
+                    <p class="address-text">Sweet&Co - Rua Augusta, 1200, São Paulo</p>
+                    <a href="#" class="change-link">Alterar</a>
+                </div>
+            </div>
+            
+            <span class="price">R$0</span>
+        </label>
+    </div>
+
+    <hr class="shipping-divider">
+
+    <div class="shipping-option-item">
+        <label for="home-delivery" class="option-label">
+            
+            <input type="radio" id="home-delivery" name="shipping-method" value="home">
+            
+            <div class="option-content">
+                <span class="title">Entrega em Casa</span>
+                <p class="time">Prazo: 3-5 dias úteis</p>
+            </div>
+            
+            <span class="price">R$10</span>
+        </label>
+    </div>
+    
+</div>
+
+    <!--pagamento-->
+
+    <div class="payment-container-wrapper">
+
+    <h2 class="payment-title">Pagamento</h2>
+
+    <div class="payment-option-card">
+        
+        <label for="credit-card" class="payment-option-label active">
+            <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+            <span class="option-name">Cartão de Débito / Crédito</span>
+            <span class="card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="#777" stroke-width="1.5"/>
+                    <line x1="3" y1="9" x2="21" y2="9" stroke="#777" stroke-width="1.5"/>
+                </svg>
+            </span>
+        </label>
+        
+        <div class="card-form-details active-form">
+            <div class="input-group full-width">
+                <input type="text" placeholder="1234 5678 9012 3456">
+                <span class="input-icon">💳</span>
+            </div>
+            
+            <div class="input-group split-half">
+                <input type="text" placeholder="MM / AA">
+            </div>
+            <div class="input-group split-half">
+                <input type="text" placeholder="CVV (3 dígitos)">
+                <span class="input-icon help-icon">?</span>
+            </div>
+
+            <div class="input-group full-width">
+                <input type="text" placeholder="Nome impresso no cartão">
+            </div>
+            
+            <div class="card-logos">
+                <img src="visa-placeholder.png" alt="Visa" class="card-logo visa-logo">
+                <img src="mastercard-placeholder.png" alt="Mastercard" class="card-logo mastercard-logo">
+                <img src="amex-placeholder.png" alt="Amex" class="card-logo amex-logo">
+            </div>
+
+            <div class="security-info">
+                <span class="lock-icon">🔒</span>
+                Todas as transações são seguras e criptografadas.
+            </div>
+        </div>
+        
+        <hr class="option-separator">
+        
+        <label for="pix" class="payment-option-label">
+            <input type="radio" id="pix" name="payment-method" value="pix">
+            <span class="option-name">PIX</span>
+            <span class="payment-logo pix-logo-placeholder">PIX</span>
+        </label>
+
+        <hr class="option-separator">
+        
+        <label for="boleto" class="payment-option-label">
+            <input type="radio" id="boleto" name="payment-method" value="boleto">
+            <span class="option-name">Boleto Bancário</span>
+            <span class="payment-logo boleto-logo-placeholder">Boleto</span>
+        </label>
+        
+    </div>
+
+    <a href="agradecimento.html" class="complete-purchase-btn">FINALIZAR COMPRA</a>
+    
+
+</div>
+
+    <!--rodapé-->
+
+     <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Para melhores informações consulte</strong> <a href="#">ajuda</a>
+      ou acesse
+      <a href="#">informações detalhadas</a>. No nosso web site
+      <a href="indexloja.html">SWEET&CO.</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Sweet&Co</title>
+    <link rel="stylesheet" href="criarconta.css">
+</head>
+<body>
+    
+    <!--cabeçalho-->
+
+    <header class="simple-header">
+    <div class="header-content-wrapper">
+        <a href="indexloja.html" class="header-logo">
+            <span class="logo-icon"></span>
+        </a>
+        
+        <nav class="header-nav">
+            <a href="indexloja.html" class="nav-link back-to-shop">Voltar à Loja</a>
+            <a href="#" class="nav-link customer-support">Suporte ao Cliente</a>
+        </nav>
+    </div>
+</header>
+
+    <!--criar conta-->
+    
+    <div class="create-account-page-container">
+        
+        <div class="account-box">
+            
+            <header class="account-header">
+                <h2>Crie sua Conta</h2>
+                <p>Cadastre-se digitando seu endereço de e-mail e senha.</p>
+            </header>
+            <form class="account-form">
+                
+                <button type="button" class="btn-google-top">
+                    <span class="icon-google">G</span> Continuar com o Google
+                </button>
+                
+                <div class="separator">
+                    <hr>
+                    <span>Ou</span>
+                    <hr>
+                </div>
+
+                <div class="input-group">
+                    <label for="email-address" class="visually-hidden">E-mail</label>
+                    <div class="input-container">
+                        <span class="icon">✉️</span> 
+                        <input type="email" id="email-address" placeholder="Digite seu e-mail" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password" class="visually-hidden">Senha</label>
+                    <div class="input-container">
+                        <span class="icon">🔒</span> 
+                        <input type="password" id="password" placeholder="Crie uma senha" required>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="receive-news">
+                    <label for="receive-news">Receber notícias, atualizações e promoções</label>
+                </div>
+
+                <button type="submit" class="btn-create-account">Cadastrar</button>
+                
+                <p class="terms-policy">Ao criar uma conta, você concorda com nossos
+                   <a href="#" class="terms-link">Termos de Serviço</a> e a <a href="#" class="policy-link">Política de Privacidade.</a>
+                </p>
+            </form>
+
+            <footer class="account-footer">
+                Já tem uma conta? <a href="login.html" class="login-link">Faça login aqui</a>
+            </footer>
+        </div>
+        
+    </div>
+
+    <!--rodapé-->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Para melhores informações consulte</strong> <a href="#">ajuda</a>
+      ou acesse
+      <a href="#">informações detalhadas</a>. No nosso web site
+      <a href="indexloja.html">SWEET&CO.</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

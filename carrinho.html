@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Sweet&Co</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    
+    <!--cabeçalho-->
+
+<header class="simple-header">
+    <div class="header-content-wrapper">
+        <a href="indexloja.html" class="header-logo">
+            <span class="logo-icon"></span>
+        </a>
+        
+        <nav class="header-nav">
+            <a href="indexloja.html" class="nav-link back-to-shop">Voltar à Loja</a>
+            <a href="#" class="nav-link customer-support">Suporte ao Cliente</a>
+        </nav>
+    </div>
+</header>
+
+    <!--compra-->
+
+    <main class="shopping-cart-page">
+    
+    <header class="cart-header">
+        <h1>Carrinho de Compras</h1>
+        <p>Taxas de envio e cupons de desconto são aplicados no checkout.</p>
+    </header>
+
+    <div class="cart-layout-container">
+        
+        <div class="order-details-column">
+            <h2>Seu Pedido</h2>
+            
+            <div class="cart-item">
+                <img src="imgs/bombomdemaracuja.jpg" alt="Bombom de Maracujá" class="item-image">
+                <div class="item-info">
+                    <h3 class="product-name">Bombom de Maracujá</h3>
+                    <p class="description">Brigadeiro de ninho, maracujá e cobertura de chocolate</p>
+                    <p class="shipping-time">Entrega: 2-3 dias úteis</p>
+                    
+                    <div class="quantity-control">
+                        <input type="number" value="2" min="1" class="qty-input">
+                    </div>
+                </div>
+                
+                <div class="item-pricing">
+                    <button class="remove-btn">🗑️</button>
+                    <div class="price-section">
+                        <span class="current-price-small">R$30,00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-item">
+                <img src="imgs/brigadeirao.jpg" alt="Brigadeirão Fit" class="item-image">
+                <div class="item-info">
+                    <h3 class="product-name">Brigadeirão Fit</h3>
+                    <p class="description">Brigadeiro sem glúten e sem lactose</p>
+                    <p class="shipping-time">Entrega: 2-3 dias úteis</p>
+                    
+                    <div class="quantity-control">
+                        <input type="number" value="1" min="1" class="qty-input">
+                    </div>
+                </div>
+                
+                <div class="item-pricing">
+                    <button class="remove-btn">🗑️</button>
+                    <span class="current-price-small price-alone">R$30,00</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="summary-column">
+            <h2>Resumo</h2>
+            
+            <div class="summary-details">
+                <div class="summary-line">
+                    <span>Itens no Carrinho</span>
+                    <span>R$60,00</span>
+                </div>
+                <div class="summary-line savings-line">
+                    <span>Desconto aplicado</span>
+                    <span>-R$6,00</span>
+                </div>
+                
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>R$54,00</span>
+                </div>
+            </div>
+            
+            <a href="pgnpagamento.html" class="checkout-btn">IR PARA PAGAMENTO</a>
+            
+            <div class="discount-gift-card">
+                <span>CUPOM DE DESCONTO</span>
+                <span class="arrow-icon">></span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--sanfona-->
+
+    <section class="accordion-container">
+    
+    <div class="accordion-item">
+        <input type="checkbox" id="details-toggle" class="accordion-toggle" hidden>
+        <label for="details-toggle" class="accordion-header">
+            Detalhes do Produto
+            <span class="arrow">></span>
+        </label>
+        <div class="accordion-content">
+            <p>Informações detalhadas sobre os produtos, ingredientes, origem e cuidados.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="size-toggle" class="accordion-toggle" hidden>
+        <label for="size-toggle" class="accordion-header">
+            Tamanhos e Porções
+            <span class="arrow">></span>
+        </label>
+        <div class="accordion-content">
+            <p>Informações sobre tamanhos disponíveis e porções por embalagem.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="reviews-toggle" class="accordion-toggle" hidden>
+        <label for="reviews-toggle" class="accordion-header">
+            Avaliações
+            <div class="review-summary">
+                <span class="stars">★★★★★</span>
+                <span class="count">(24)</span>
+            </div>
+            <span class="arrow">></span>
+        </label>
+        <div class="accordion-content">
+            <p>Veja o que nossos clientes estão dizendo sobre nossos produtos!</p>
+        </div>
+    </div>
+
+</section>
+
+   <!--rodapé-->
+
+    <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Para melhores informações consulte</strong> <a href="#">ajuda</a>
+      ou acesse
+      <a href="#">informações detalhadas</a>. No nosso web site
+      <a href="indexloja.html">SWEET&CO.</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
